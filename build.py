@@ -4,8 +4,8 @@ import os
 
 gsource = open("gsource", 'r').read()
 
-g = open("g", 'w')
+g = open("build/g", 'w')
 g.write(codecs.encode(gsource, "rot_13"))
 g.close()
 
-os.system("strfile -r -x g g.dat") 
+os.system("strfile -r -x build/g build/g.dat") 
